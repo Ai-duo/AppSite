@@ -1,0 +1,249 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="face"
+            type="android.graphics.Typeface" />
+
+        <variable
+            name="es"
+            type="com.kelin.add.kelinsite.add.Elements" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:screenOrientation="portrait">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/p1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/wd" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="温度"
+                android:textColor="#ff0"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="center"
+                android:text="@{es.wd+`℃`}"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6px" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/p2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/sd" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="湿度"
+                android:textColor="#ff0"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="center"
+                android:text="@{es.sd+`%`}"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6px" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/p3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/yl" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="雨量"
+                android:textColor="#ff0"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="center"
+                android:text="@{es.js+`mm`}"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6px" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/p4"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/fs" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="风速"
+                android:textColor="#ff0"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="center"
+                android:text="@{es.fs+`m/s`}"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6px" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/p5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/fx" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="风向"
+                android:textColor="#ff0"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="center"
+                android:text="@{es.fx}"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6px" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/p6"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/qy" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="气压"
+                android:textColor="#ff0"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="center"
+                android:text="@{es.qy+`pha`}"
+                android:textSize="@dimen/textsize"
+                app:setTypeface="@{face}" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6px" />
+    </LinearLayout>
+
+</layout>

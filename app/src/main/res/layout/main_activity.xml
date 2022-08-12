@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maincontainer"
+    android:layout_width="128px"
+    android:layout_height="196px"
+    android:background="#000"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity">
+    <!--标题-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3px"
+        android:paddingTop="3px"
+        android:textColor="#f00"
+        android:textSize="15px" />
+
+    <LinearLayout
+        android:id="@+id/content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="4px"
+        android:layout_weight="4.2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+   
+    <com.kelin.add.kelinsite.add.MarqueeView
+        android:id="@+id/weatherinfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:lineSpacingExtra="1px"
+        android:paddingBottom="2dp"
+        android:visibility="gone"
+        app:marqueeview_repet_type="repet_interval"
+        app:marqueeview_text_color="#fff"
+        app:marqueeview_text_distance="100"
+        app:marqueeview_text_size="12"
+        app:marqueeview_text_speed="0.3"
+
+        />
+
+</LinearLayout>

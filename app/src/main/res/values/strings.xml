@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">kelinsite</string>
+    <dimen name="textsize">26px</dimen>
+    <dimen name="leftsize">9px</dimen>
+    <dimen name="rightsize">9px</dimen>
+    <dimen name="topsize">3px</dimen>
+    <dimen name="bottomsize">3px</dimen>
+</resources>
